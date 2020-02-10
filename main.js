@@ -1,3 +1,5 @@
+const locateCard = document.querySelector('#locate-card');
+
 //получение данных локации 
 async function getLocation(){
     try{
@@ -8,3 +10,4 @@ async function getLocation(){
 }
 getLocation();
 
+// const astronaut = document.createElement()

@@ -2,6 +2,19 @@ body {
     margin: 0 auto;
     height: 100vh;
 }
-.locate {
-    max-width: 1000px ;
+.block-one {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#locate-card {
+    width: 1000px;
+    display: inline-block;
+}
+.time-card {
+    display: inline-block;
+    width: 700px;
+}
+.block-two {
+    width: 500px;
 }
