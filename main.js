@@ -1,8 +1,10 @@
-// const locateCard = document.querySelector('#locate-card');
-const locate = document.querySelector('#locate');
 const astronautList = document.querySelector('#card');
+
 const lon = document.querySelector('#lon');
 const lat = document.querySelector('#lat');
+
+const time = document.querySelector('#time')
+const date = document.querySelector('#date')
 
 let timer = null;
 
@@ -18,6 +20,8 @@ async function getLocation(){
     }
 }
 //дата и время UTC
+time.innerText = moment.utc().format('HH:mm:ss');
+date.innerText = moment().add(7,'days').format('dddd, Do MMMM YYYY') ;
 
 
 
@@ -51,7 +55,11 @@ function createCard(res) {
   astronaut.innerHTML = `
     <div class="card bg-light ">
       <div class="card-body text-center astronaut">
-      <p class="card-text font-weight-bold">${res.name}</p>
+      <div>
+        <i class="fas fa-user-circle icon"></i>
+        <i class="fas fa-user-astronaut icon"></i>
+        <p class="card-text font-weight-bold">${res.name}</p>
+      </div>
     </div>
   `
   return astronaut;

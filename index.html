@@ -6,24 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- <script src="moment.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
     <div class="block-one">
         <div class="card">
-            <div id="locate-card" class="card-body" >
+            <div id="locate-card" class="card-body text-center" >
                 <div class="font-weight-bold">ISS is now located ad:</div>
+                <br>
                 longitude: <span id='lon'></span>,
                 lattitude: <span id='lat'></span>
             </div>
         </div>
-    
             <div class="card bg-light time-card">
                 <div class="card-body text-center">
-                <p class="card-text">UTC</p>
+                    <p class="card-text font-weight-bold">Current UTC time:</p>
+                    <span id='time'></span>
+                    <div id='date'></div>
                 </div>
-        </div>
+            </div>
     </div>
     <div id="" class=" "></div>
     <div id="card" class=" card block-two"></div>
@@ -31,7 +33,7 @@
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src='/main.js'></script>
 </body>
 </html>

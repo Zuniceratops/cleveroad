@@ -3,12 +3,11 @@ body {
     height: 100vh;
 }
 .block-one {
-    height: 80px;
     display: flex;
     justify-content: space-around;
 }
-/* .indent {
-    margin-left: 20px;
+/* .icon {
+    size: 20px;
 } */
 #locate-card {
     width: 1000px;
@@ -19,7 +18,7 @@ body {
     width: 700px;
 }
 .block-two {
-    width: 500px;
+    width: 450px;
     height: 700px;
     background: #5555553f;
 }
