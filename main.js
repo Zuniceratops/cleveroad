@@ -1,5 +1,8 @@
-const locateCard = document.querySelector('#locate-card');
+// const locateCard = document.querySelector('#locate-card');
+const locate = document.querySelector('#locate');
 const astronautList = document.querySelector('#card');
+const lon = document.querySelector('#lon');
+const lat = document.querySelector('#lat');
 
 let timer = null;
 
@@ -8,10 +11,15 @@ async function getLocation(){
     try{
       const response = await axios.get('http://api.open-notify.org/iss-now.json')
       const loc = response.data;
+      lon.innerText = loc.iss_position.longitude;
+      lat.innerText = loc.iss_position.latitude;
     }catch(error){
         console.error(error);
     }
 }
+//дата и время UTC
+
+
 
 //состав текущего экипажа 
 async function getAstronaut() {
@@ -43,8 +51,7 @@ function createCard(res) {
   astronaut.innerHTML = `
     <div class="card bg-light ">
       <div class="card-body text-center astronaut">
-      <p class="card-text">Name: ${res.name}</p>
-      <p class="card-text">Craft: ${res.craft}</p>
+      <p class="card-text font-weight-bold">${res.name}</p>
     </div>
   `
   return astronaut;

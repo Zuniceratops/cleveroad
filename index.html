@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <script src="moment.js"></script> -->
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
     <div class="block-one">
-        <div id="locate-card" class="card">
-            <div class="card-body">ISS is now located ad:</div>
+        <div class="card">
+            <div id="locate-card" class="card-body" >
+                <div class="font-weight-bold">ISS is now located ad:</div>
+                longitude: <span id='lon'></span>,
+                lattitude: <span id='lat'></span>
+            </div>
         </div>
     
             <div class="card bg-light time-card">
@@ -26,6 +31,7 @@
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"</script>
     <script src='/main.js'></script>
 </body>
 </html>
