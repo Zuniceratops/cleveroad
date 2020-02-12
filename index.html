@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
@@ -27,13 +28,22 @@
                 </div>
             </div>
     </div>
-    <div id="" class=" "></div>
-    <div id="card" class=" card block-two"></div>
+    <div class="block-card-map row">
+        <div id="card" class=" card block-two"></div>
+        <div id="map" class="col-sm-8" style="width: 100%; height: 600px; margin-left: 50px; margin-top: 20px;">
+            <img src="/ISSIcon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" style="margin-left: -25px; margin-top: -15px; width: 50px; height: 30px; transform: translate3d(366px, 28px, 0px); z-index: 28;">
+        </div>
+    </div>
+    <div class="count">Total amount: <span id='countIss'></span> people on ISS</div c>
+        
+    
+
    
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src='/main.js'></script>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
 </body>
 </html>

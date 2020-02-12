@@ -6,9 +6,6 @@ body {
     display: flex;
     justify-content: space-around;
 }
-/* .icon {
-    size: 20px;
-} */
 #locate-card {
     width: 1000px;
     background: rgba(230, 230, 255, 0.178);
@@ -17,11 +14,27 @@ body {
     display: inline-block;
     width: 700px;
 }
+.block-card-map {
+    margin: 0 auto;
+    width: 100%;
+}
 .block-two {
     width: 450px;
-    height: 700px;
+    height: 600px;
     background: #5555553f;
 }
 .astronaut {
     background: rgba(246, 218, 4, 0.055);
+}
+.count {
+    border: 2px solid gray;
+    width: 450px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    padding-right: 20px;
 }
